@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./resources/style.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <title>Jake Parr</title>
@@ -10,60 +13,133 @@
 <body>
     <nav>
         <h2 id="logo">Jake Parr</h2>
-        <ul>
+        <ul class="nav-items-container">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="./resources/contact.html">Contact Me</a></li>
         </ul>
     </nav>
     <main>
+
+        <!-- Hero Section -->
         <section id="about-me">
             <div class="about-me-container">
-                <div class="about-me-text-container">
-                    <h2>About Me</h2>
+                <h2>About Me</h2>
+            </div>
 
-                    <h3>My Family</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quaerat dolorem quo porro sint dolor, delectus vero cumque enim esse nobis tempore doloribus sunt nisi velit aspernatur animi sed commodi.</p>
+            <section id="intro">
+                <div class="intro-container">
+                    <div class="intro-image-container">
+                        <img src="./media/Jake.jpeg" alt="A photo of Jake">
+                    </div>
+                    <div class="intro-text-container">
+                        <h2 class="hi">Hi!</h2>
+                        <h2 class="my-name-is">My name is Jake!</h2>
+                    </div>
+                </div>
+            </section>
 
-                    <h3>My Work</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia error dicta, laborum perspiciatis dolorem consequatur enim ullam ipsam magnam quidem architecto voluptates tempora sunt velit! Soluta eaque culpa delectus placeat?</p>
-                    
-                    <h3>My Hobbies</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cum amet similique delectus voluptas saepe est beatae repellat at odio perspiciatis? Deleniti illo commodi atque esse, in temporibus itaque labore.</p>
+        <!-- About Me -->
+
+
+                <!-- My Family -->
+
+            <div class="about-me-family-container">
+                <!-- <h3>My Family</h3> -->
+                <div class="about-me-family-text-container">
+                    <p>I have a lovely family of five.</p>
+                    <p>My wife, Paige, my dog, Dipper, and my three cats, Van, Ash and Lola.</p>
+                    <p>They may not be kids, but they are just as much a handful for Paige and I and each of them has a personality of their own.</p>
                 </div>
                 <div class="about-me-image-container">
-                    <img src="" alt="">
-                </div>
-                <div class="about-me-script-container">
-                    <aside class="hobby-js">JS Random Hobby fixation</aside>
+                    <img src="./media/Paige-Jake.jpg" alt="">
+                    <img src="./media/Dipper.jpeg" alt="">
+                    <img src="./media/Cats.jpeg" alt="">
                 </div>
             </div>
+
+            <!-- My Work -->
+
+            <div class="about-me-work-container">
+                <!-- <h3>My Work</h3>
+                <div class="about-me-image-container">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div> -->
+                <div class="about-me-work-text-container">
+                    <p>I spent seven years working as a Security & Automation Technician doing low-voltage electrical for the New England area. I progressed a lot with my communication and troubleshooting skills and customer relations. In between running training for new technicians, I was visiting customer sites to find and resolve service issues. Through this process, I continued to recognize how much growth there was in the software side of things and started learning skills in IT and networking.</p>
+                    <p>After discovering how much my brother loved Full-Stack Web Development, I also decided to pursue becoming a Web Developer. I quit my job to study full-time, and that's where I am now, learning Full-Stack Web Dev and holding down the fort while my Paige works in Industrial Design.</p>
+                    <p>The change has been a lot to get used to, but I am enjoying this time of creating my own schedule and pursuing my goals.</p>
+                </div>
+            </div>
+
+            <!-- My Hobbies -->
+
+            <div class="about-me-hobbies-container">
+                <!-- <h3>My Hobbies</h3>
+                <div class="about-me-image-container">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div> -->
+                <div class="about-me-hobbies-text-container">
+                    <p>I have quite a few hobbies as well</p>
+                    <img src="./media/Desk-Setup.jpeg" alt="" class="about-me-hobbies-image-container">
+                    <img src="./media/Soddering.jpeg" alt="" class="about-me-hobbies-image-container">
+                    <img src="./media/Running.jpeg" alt="" class="about-me-hobbies-image-container">
+                    <img src="./media/Drone.jpg" alt="" class="about-me-hobbies-image-container">
+                    <img src="./media/Hammock.jpeg" alt="" class="about-me-hobbies-image-container">
+                    <p>I have always loved computers and electronics; I built my gaming PC and have recently been enjoying Apex Legends. I also set up my home network with a pi-hole (ad/tracking blocker) and love messing around with Rasberry Pi and Arduino boards.</p>
+                    <p>Paige and I built a Tiny House that we currently live in (pictures in projects below). We bought a travel trailer and renovated it to become our tiny house on wheels! My current fun project has been building custom LED lighting for a full-wall shelf system we built.</p>
+                    <p>After helping a friend design and renovate their garage into a home gym, I have been getting increasingly into woodworking. I also enjoy hiking, hammocking, running, flying drones, sudoku, strategy board games, and my recent outdoor obsession has been Disc Golf.</p>
+                    <p>What will be next?</p>
+                </div>
+            </div>
+
+            <!-- JavaScript Module -->
+            
+            <div class="about-me-script-container">
+                <button class="hobby-btn">Generate</button>
+                <p class="hobby-output">Click button to generate</p>
+                <aside class="hobby-js">JS Random Hobby fixation</aside>
+            </div>
         </section>
+
+        <!-- Projects -->
+
         <section id="projects">
             <div class="projects-container">
                 <div class="projects-text-container">
                 <h2 id="projects">Projects</h2>
-                <details>
-                    <summary>
-                        <h3>Lorem.</h3>
-                    </summary>
-                    <img src="" alt="" class="project-image">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita numquam, laboriosam nam rem tenetur nulla, blanditiis, adipisci vero eum iste quidem? Hic, velit atque eius exercitationem accusantium sint fugiat iusto?</p>
-                </details>
-                <details>
-                    <summary>
-                        <h3>Earum.</h3>
-                    </summary>
-                    <img src="" alt="" class="project-image">
-                    <p>Natus id, aspernatur ipsum corrupti nemo numquam consequatur. Cumque nisi amet nostrum, ducimus non tenetur! Minus exercitationem, hic veritatis eos magni nobis ducimus libero laudantium? Soluta dicta labore exercitationem repellat.</p>
-                </details>
-                <details>
-                    <summary>
-                        <h3>Fugiat?</h3>
-                    </summary>
-                    <img src="" alt="" class="project-image">
-                    <p>Consectetur possimus provident aspernatur, id quos sint deleniti neque perferendis eos sapiente quo deserunt quasi. Assumenda ex minus voluptatem earum veniam architecto, repudiandae, praesentium dolores alias debitis officia officiis nemo.</p>
-                </details>
+                <div class="projects-items-container">
+                    <details>
+                        <summary>
+                            <h3>Tiny House</h3>
+                        </summary>
+                        <img src="./media/Tiny-House-1.jpeg" alt="" class="project-image">
+                        <img src="./media/Tiny-House-2.JPG" alt="" class="project-image">
+                        <img src="./media/Tiny-House-3.jpeg" alt="" class="project-image">
+                        <p>We bought the RV in the fall of 2020 during the pandemic and renovated it throughout the year until we moved in the fall of 2021. We were planning on just doing some interior renovations to make it less of an RV and more of a home, but we found out many RVs are not built to withstand New England weather; we had quite a few significant renovations to add to the list.</p>
+                        <p>We have been living happily and enjoying the small footprint and balance of indoor/outdoor activities it provides.</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <h3>Garage Home Gym</h3>
+                        </summary>
+                        <img src="./media/Gym-Before.jpeg" alt="" class="project-image">
+                        <img src="./media/Gym-After.jpeg" alt="" class="project-image">
+                        <img src="./media/Pegboard.jpeg" alt="" class="project-image">
+                        <p>A friend approached me and asked me to collaborate on their Garage Home Gym renovation, to design a concept and work with them to put it into action. Through this process, we have talked about doing this together for others, as it was an enjoyable project and a great creative outlet.</p>
+                        <p>The large pegboards pictured above were something that I had handmade. Although I can think of how I could make them better now, it is something I'm very proud of alongside the rest of the project.</p>
+                    </details>
+                    <details>
+                        <summary>
+                            <h3><a href="https://jparr95.github.io/In-The-Bag/">Disc Golf Website</a></h3>
+                        </summary>
+                        
+                    </details>
+                </div>
             </div>
         </section>
         <section id="contact-me">
@@ -73,7 +149,7 @@
         </section>
     </main>
     
-    <script src="./resources/script.js"></script>
+    <script src="./resources/script.js" defer></script>
 </body>
 <footer></footer>
 </html>

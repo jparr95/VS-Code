@@ -1,15 +1,21 @@
-let content = document.querySelector('h1');
-let button = document;
-let randomColor = () => {
-    let value = () => {
-        return Math.floor(Math.random()*256)
-    }
-    // console.log(value)
-    return `rgb(${value()}, ${value()}, ${value()})`
+const btn = document.querySelector('.hobby-btn');
+const output = document.querySelector('.hobby-output');
+const hobbyList = ['Kite Flying',
+'Coffee Connoisseur',
+'Working Out',
+'Knitting',
+'Crochet',
+'Tai Kwon Do',
+'Parkour',
+'NFC Tag Automation',
+'Mechanical Keyboards',
+]
+const randomNumber = () => {
+    return Math.floor(Math.random() * hobbyList.length);
 }
-
-const changeColor = () => {
-    content.style.color = randomColor();
+const generateHobby = () => {
+    randomNumber();
+    let hobbySelected = hobbyList[randomNumber()];
+    output.innerText = `I think I'm going to try ${hobbySelected} next!`;
 }
-
-button.onclick = changeColor;
+btn.onclick = generateHobby();

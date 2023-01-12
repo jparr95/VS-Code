@@ -1,3 +1,93 @@
-h1 {
-    background-color: firebrick;
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    /* height: 100%; */
+    color: #323232;
+    background-color: #FAFAFA;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    text-align: center;
+    width: 60%;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: #323232
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: #323232;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    /* padding: 1rem 0; */
+    /* height: 10vh; */
+}
+
+img {
+    width: 50%;
+    height: auto;
+    /* padding: 1rem; */
+    border-radius: 1rem;
+}
+
+.about-me-container h2{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.about-me-family-container {
+    padding-top: 1rem;
+}
+
+#intro {
+    /* height: 85vh; */
+}
+
+#logo {
+/* color: #0066ff; */
+font-family: 'Bakbak One', cursive;
+/* font-size: 3rem; */
+}
+
+.hi, .my-name-is {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.nav-items-container {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+    padding: 0
+}
+
+.nav-items-container li {
+    margin: 0.5rem;
+}
+
+.projects-items-container summary {
+    /* display: inline-flex; */
+    list-style-type: none;
+}
+
+.projects-items-container summary:hover {
+    text-decoration: underline;
+    font-size: larger;
+    cursor: pointer;
 }
