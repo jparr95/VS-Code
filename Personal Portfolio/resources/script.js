@@ -8,7 +8,7 @@ const hobbyList = ['Kite Flying',
 'Tai Kwon Do',
 'Parkour',
 'NFC Tag Automation',
-'Mechanical Keyboards',
+'Mechanical Keyboards'
 ]
 const randomNumber = () => {
     return Math.floor(Math.random() * hobbyList.length);
