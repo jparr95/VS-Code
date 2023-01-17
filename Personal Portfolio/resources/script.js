@@ -18,4 +18,5 @@ const generateHobby = () => {
     let hobbySelected = hobbyList[randomNumber()];
     output.innerText = `I think I'm going to try ${hobbySelected} next!`;
 }
-btn.onclick = generateHobby();
+// btn.onclick = generateHobby;
+btn.addEventListener('click', generateHobby);
